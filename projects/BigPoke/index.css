@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+@font-face {font-family:ThirstyScript; src: url(ThirstyScriptRegular_0.otf);}
+
+body {
+/*  background-color: #f7fafa !important; */
+  font-family: 'Asap', sans-serif !important;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgb(37, 170, 225) !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #ffe669 !important;
+}
+
+.addressLg {
+  font-size: 1.3em;
+}
+
+.jumbotron {
+  background-color: #FFF !important;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  font-size: 0.7em;
+  font-style: italic;
+  padding: 10px;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+/* FOR HR */
+.new {
+  background-color: #ffe669;
+  border: 0;
+  height: 40px;
+}
+
+/* NAVBAR TINGZ */
+.fixed-top {
+  max-width: 250px;
+}
+.navbar-nav {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+li {
+  padding: 5px 10px 5px 20px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255,255,255,0) !important;
+}
+
+/* GPS STYLINGS */
+iframe {
+  frameborder: 0;
+  scrolling: no;
+}
+
+.gpsnavLg {
+  width: 500px;
+  height: 400px;
+}
+
+.gpsnavSm {
+  width: 80%;
+  height: 280px;
+}
+
+.mapouterLg {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 500px;
+  }
+
+.gmap_canvasLg {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 500px;}
+
+.mapouterSm {
+  position: relative;
+  text-align: center;
+  height: 300px;
+  }
+
+.gmap_canvasSm {
+  overflow: hidden;
+}
+
+/* PARLLAX SCROLLING 1*/
+.parallax1 {
+  background-image: url("images/banner2.jpg");
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  transition: 0.7s;
+}
+
+.parallax1:hover{
+  opacity: 1;
+  transition: 0.7s;
+}
+/* PARALLAX SCROLLING 2*/
+.parallax2 {
+  background-image: url("images/banner1.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  transition: 0.7s;
+}
+
+.parallax2:hover{
+  opacity: 1;
+  transition: 0.7s;
+}
+
+/* TEXT OVER PARALLAX */
+.imgText {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.thirstyfont {
+  font-family: ThirstyScript;
+    color: rgb(37, 170, 225);
+}
+
+.home {
+  padding: 2px;
+
+}

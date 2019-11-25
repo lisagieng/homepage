@@ -1,0 +1,50 @@
+<!-- Lisa Gieng
+Nov/14/2019
+hw6.html
+This file is the skeleton of the multiplication table.
+It has the instructions, some rules, and the form for the user's input.
+It also has the placeholder for where the table will go.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/hw6.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lisa Gieng - HW6</title>
+</head>
+<body>
+  <div class="row">
+    <div class="container-fluid">
+      <form>
+        <h3>Multiplication Table with User Input</h3>
+        <span>Some rules:</span><br>
+        <ul>
+          <li>Will only accept number inputs</li>
+          <li>Will only accept integers </li>
+          <li>Empty input will be accepted as 0</li>
+        </ul><br>
+
+        Input 4 numbers: <br>
+        <input name="cStart" id="cStart" type="number" placeholder="Multiplier start">
+        <input name="cEnd" id="cEnd" type="number" placeholder="Multiplier end"><br><br>
+        <input name="rStart" id="rStart" type="number" placeholder="Multiplicand start">
+        <input name="rEnd" id="rEnd" type="number" placeholder="Multiplicand end"><br><br>
+        <input type="button" onclick="createTable()" value="Submit"><br>
+        <span class="errorColor" id="invalidInput"></span>
+      </form>
+    </div>
+
+    <div class="container-fluid pt-3">
+      <!-- output multiplication table here -->
+      <table class="table table-bordered text-center" id="myTable">
+      </table>
+    </div>
+  </div>
+
+  <footer>&copy; 2019 Lisa Gieng </footer>
+  <script src="js/hw6.js"></script>
+</body>
+</html>

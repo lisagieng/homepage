@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+html,
+body { /* for bg gradients https://www.w3schools.com/css/css3_gradients.asp */
+  background-image: linear-gradient(#ffe8f2, #e8e0ff);
+  background-repeat: no-repeat;
+  background-color: #e8e0ff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 5%;
+  margin-left: 22%;
+}
+
+img {
+  padding-right: 5px;
+}
+
+.woo {
+  font-style: italic;
+  color: grey;
+}
+
+/* PROJECT OVERLAYS N TINGZ */
+.projectss {
+  -webkit-filter: grayscale(100%); filter: grayscale(100%);
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.projectss:hover {
+  -webkit-filter: grayscale(0%); filter: grayscale(0%);
+}
+
+.projectss .hover {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 90%;
+ opacity: 0;
+ transition: 0.5s ease;
+}
+
+.projectss:hover .hover {
+ opacity: 1;
+}
+
+.projectss .projText {
+ color: black;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+}
+
+.projectss p {
+   background-color: lightgrey;
+   display: inline;
+   padding: 4px;
+}
+
+/* CONTACT TINGZ */
+.contactme {
+  background-color: rgba(255,255,255,0.4) !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #000;
+  font-size: 1.3em;
+  padding: 30px 20px 60px;
+  font-style: italic;
+}
+
+/* SIDENAV */
+.sidenav {
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.6);
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.minifooter {
+  font-size: 0.6em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+/* STYLING LISTS */
+ul {
+  list-style-type: none;
+}
+
+li:before { /* TO USE '+' AS BULLET */
+  display: inline-block;
+  content: "+";
+  padding-right: 4px;
+  font-weight: bold;
+}
+
+/* HEADER 4 STYLINGS */
+h4 {
+  text-transform: uppercase;
+  color: #e37daa;
+}
+h4:hover {
+  font-style: italic;
+}
+.myheaders {
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  color: #e37daa;
+}
+
+/* LINK STYLING */
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #cfb8c5 !important;
+}

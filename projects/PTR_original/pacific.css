@@ -1,0 +1,112 @@
+/*
+File: /usr/cs/undergrad/2020/lgieng/public_html/hw3/pacific.css
+91.61 GUI I Assignment: HW 3
+Lisa Tu Gieng, UML CS, lisa_gieng@student.uml.edu
+Date: Sep/30/2019
+
+I was given HTML and an image to write CSS to replicate the image.
+This code is as simple and accurate as I could possibly make it.
+I was given a barebones structure of the CSS file that had
+essentially no styling done to it except for font sizes and colors.
+
+References are cited in-text.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	/* reference for background repeat horizontally only with color under
+	   https://www.w3schools.com/css/css_background.asp */
+		background-image: url("ptrbackground.jpg");
+		background-repeat: repeat-x; /* repeat bg img horizontally */
+		background-color: #00569f;
+  	color: #666666;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+		margin: 0 auto; /* center all content */
+	  width: 775px;
+	  height: 80%;
+	  overflow: hidden; /* used with nav ul to manage nav box height */
+}
+div:not(h1) {
+	/* for putting image as bullets
+	  https://www.w3schools.com/css/css_list.asp */
+  	list-style-image: url("marker.gif");
+  	background: white;
+  	padding-bottom: 20px;
+}
+#content {
+	/* for putting list bullets in line with text
+	 	https://www.w3schools.com/cssref/pr_list-style-position.asp */
+  	padding-right: 20px;
+  	margin-left: 220px; /* set body to right of nav bar */
+  	list-style-position: inside;
+}
+nav ul {
+	/* referenced some info from here to create column illusion
+	   https://matthewjamestaylor.com/equal-height-columns
+
+		 referenced here to set sidebar height
+		 https://www.yudiz.com/3-easiest-ways-to-make-equal-height-blocks-using-css/ */
+  	font-size: 1.2em;
+  	font-weight: bold;
+  	list-style: none; /* rm bullets */
+		margin: 0; /* default margin was 50px */
+		padding: 20px 20px 0;
+		background-color: #91C2D9;
+		margin-top: 0; /* default was ~15px, used to pull close to h1 */
+		float: left; /* set nav items to left of box */
+		width: 150px;
+		padding-bottom: 99999px; /* used for setting height equal to body */
+		margin-bottom: -99999px;
+}
+nav a:link {
+		color: #000;
+		text-decoration: none; /* rm underline */
+}
+nav a:visited {
+		color: #000;
+}
+nav a:hover {
+		color: #FFFFFF;
+}
+img {
+		float: left; /* wrap text around img */
+		padding-right: 20px;
+}
+h1 {
+	/* referenced for background fitting
+	   https://stackoverflow.com/questions/26774183/css-stretch-or-fit-background-image */
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 10px;
+		color: white;
+		background: url("sunset.jpg") 100%; /* place image at 100% size to right */
+		background-repeat: no-repeat;
+		background-color: #000032;
+}
+h2 {
+		color: #3399CC;
+}
+h1,
+h2 {
+		font-family: Georgia, "Times New Roman", serif;
+}
+span {
+    	color: #5993c9;
+	    font-weight: bold;
+}
+#contact {
+		font-size: 90%;
+}
+dt {
+		color: #000033;
+}
+footer {
+		font-family: Georgia, "Times New Roman", serif;
+		font-style: italic;
+		font-size: small;
+		margin-left: 205px;
+}
