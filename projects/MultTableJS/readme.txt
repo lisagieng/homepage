@@ -1,25 +1,31 @@
-Lisa Gieng
+Lisa Gieng 
 lisa_gieng@student.uml.edu
-Due: Nov/14/2019
+Due: Dec/1/2019
 
-HW6 - Multiplication Table in JS with User Input
+HW7 - Multiplication Table in JS with user input and JQuery validation plugin
 
 INSTRUCTIONS
-Input 4 integer values into the form. The starting values must be less than the
-ending values. Hit submit to generate table. 
+Input 4 integer values into the form. Hit submit to generate table. 
+The table will only take inputs -50 to 50 in integer form.
 
 --------------------------------------------------------------------------------
 
-I had a lot of trouble with this assignment. I began by creating a multiplication
-table in js without user input to see the structure. Then I attempted to add headers.
-This broke the entire thing. Ultimately I ended up writing how the structure
-should look if I added headers, and without any loops. This then gave me an overall
-idea of the structure of the table with headers. I then used getElementById to
-retrieve the values from the user.
+This assignment was a lot easier than hw6 was, since this assignment built off 
+of that one. I made minor changes to the HTML from hw6; I gave the form
+an ID for the JQuery validator to locate the inputs and I changed the submit
+from an input type button to a button with type submit instead. 
 
-The user will input 4 values: a multiplier start, a multiplier end, a multiplicand 
-start, and a multiplicand end. The table will then use JavaScript to generate a 
-multiplication table based on the inputted values. 
-The form will check for errors from the input; only integers will be accepted.
-If invalid inputs are found, an error will message will display under the submit
-button, stating what the error is. 
+I had minor issues with the JQuery validator; I was unsure of how to keep the 
+multiplication table from generating before the inputs were validated. I 
+solved this by removing the onclick from the submit button and adding the 
+SubmitHandler to the JS file to call the createTable function instead.
+
+There is great amounts of documentation for the plugin on the internet on the
+jqueryvalidation.org site. This allowed me to take the GreaterThan function 
+from the plugin's github page and was how I created a class for the input
+validation since they all had the same requirements instead of putting it
+one by one for each one. I also created a class that allowed me to figure out
+if the input is an integer or not. I originally used the digit: true for the 
+jquery validator, but this does not allow negative integers. I then used the
+number: true instead, but this allowed non-integers. Thus, I had to create
+my own validator rule that used modulus to check if the number was an int or not.

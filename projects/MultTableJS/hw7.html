@@ -1,0 +1,52 @@
+<!-- Lisa Gieng
+Dec/1/2019
+hw7.html
+This is an extension of my original HW6. Difference between assignments
+are the js file.
+This file is the skeleton of the multiplication table.
+It has the form for the user's input.
+It also has the placeholder for where the table will go.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/hw7.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lisa Gieng - HW7</title>
+</head>
+<body>
+  <div class="row">
+    <div class="container-fluid">
+      <form id="multiplication">
+        <!-- This is the form for the inputs -->
+        <h3>Multiplication Table with User Input</h3>
+
+        <!-- input your integers, inputNum class is for jQuery validator -->
+        Input 4 integers: <br><br>
+        <input class="inputNum" name="cStart" id="cStart" type="number" placeholder="Multiplier start"><br>
+        <input class="inputNum" name="cEnd" id="cEnd" type="number" placeholder="Multiplier end"><br>
+        <input class="inputNum"name="rStart" id="rStart" type="number" placeholder="Multiplicand start"><br>
+        <input class="inputNum"name="rEnd" id="rEnd" type="number" placeholder="Multiplicand end"><br><br>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="container-fluid pt-3">
+      <!-- output multiplication table here -->
+      <table class="table table-bordered text-center" id="myTable">
+      </table>
+    </div>
+  </div>
+
+  <footer>&copy; 2019 Lisa Gieng </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="js/hw7.js"></script>
+</body>
+</html>
