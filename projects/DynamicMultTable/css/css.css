@@ -1,0 +1,62 @@
+/* Lisa Gieng
+Dec/1/2019
+hw7.css
+This file does the styling for the html page. It makes it easier
+to read and more attractive to view.
+The table styling is done with bootstrap.
+*/
+
+body {
+  padding: 20px;
+}
+
+table {
+  padding: 20px;
+}
+
+/* coloring the headers */
+th {
+  background-color: #f0ebff;
+}
+
+/* for alternating cell pattersn */
+tr:nth-child(2n+1) td:nth-child(2n+1),
+tr:nth-child(2n+2) td:nth-child(2n+2) {
+  background: #ededed;
+}
+
+/* coloring the form */
+form {
+  background-image: linear-gradient(to bottom right, #fde3ff, #e3f6ff);
+  padding: 20px;
+  border-radius:20px;
+}
+
+footer {
+  bottom: 0;
+  text-align:center;
+  width: 100%;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+form .error {
+  color: red;
+}
+
+/* class for hiding things for toggling */
+.hideMe {
+  visibility: hidden;
+}
+
+/* for giant checkboxes! */
+#bigboy {
+  width: 30px;
+  height: 30px;
+}
+
+.tabs-nohdr .ui-tabs-nav {
+    padding-left: 0px;
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+}

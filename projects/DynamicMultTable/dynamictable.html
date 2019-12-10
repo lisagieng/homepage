@@ -1,0 +1,128 @@
+<!-- Lisa Gieng
+Dec 8, 2019
+GUI I: Creating Interactive Dynamic Table w/ Sliders and Tabs
+
+This file contains the forms and output placements for everything.
+The form takes the 4 inputs and then has placeholders for where
+the tables will go and buttons 'n' stuff.
+
+hw8.html
+Copyright (c) 2019 Lisa Gieng. All rights reserved. -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dynamic Multiplication Table v2</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="container">
+      <form id="multiplication">
+        <div class="form-group">
+          <!-- This is the form for the inputs -->
+          <h3>Dynamic Multiplication Table</h3><hr>
+          <!-- each row contains the label, the input field, and the slider -->
+
+          <!-- starting multiplier -->
+          <div class="row">
+            <div class="col-3">
+              Multiplier Start
+            </div>
+            <div class="col-4">
+              <input class="inputNum form-control" name="cStart" id="cStart" type="number">
+            </div>
+            <div class="col-5" id="cStartSlide"></div></div>
+
+          <!-- ending multiplier -->
+          <div class="row pt-2">
+            <div class="col-3">
+              Multiplier End
+            </div>
+            <div class="col-4">
+              <input class="inputNum form-control" name="cEnd" id="cEnd" type="number">
+            </div>
+            <div class="col-5" id="cEndSlide"></div></div>
+
+            <!-- starting multiplicand -->
+            <div class="row pt-2">
+              <div class="col-3">
+                Multiplicand Start
+              </div>
+              <div class="col-4">
+                <input class="inputNum form-control" name="rStart" id="rStart" type="number">
+              </div>
+              <div class="col-5" id="rStartSlide"></div></div>
+
+            <!-- ending multiplicand -->
+            <div class="row pt-2">
+              <div class="col-3">
+                Multiplicand Start
+              </div>
+              <div class="col-4">
+                <input class="inputNum form-control" name="rEnd" id="rEnd" type="number">
+              </div>
+              <div class="col-5" id="rEndSlide"></div></div><br>
+
+          <!-- le submit button -->
+          <!--<button class="btn btn-dark" type="submit" id="Submit">Submit</button>-->
+          <!-- le save buttton -->
+          <button class="btn btn-dark" type="button" id="save" onclick='saveTable()'>Save</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- header for organiazation -->
+    <div class="col-11 mx-auto pt-3">
+      <h3>Current Table</h3>
+    </div>
+
+    <!-- output most recent multiplication table here -->
+    <div class="col-11 mx-auto" id="multTable">
+      <table class="table table-bordered text-center" id="myTable"></table>
+    </div>
+
+    <!-- a container for the saved header, multiple delete buttons and instructions -->
+    <div class="col-11 mx-auto">
+      <h3>Saved Tables</h3>
+      <button class="hideMe btn btn-outline-dark" id="multDelete">Delete multiple tabs</button>
+      <button onclick="deleteLot()" class="hideMe btn btn-danger">Delete</button>
+      <span class="hideMe">Select tabs to delete, then press delete button.</span>
+    </div>
+
+    <!-- saved tables will be here -->
+    <div class="col-11 mx-auto tabs-nohdr ui-tabs-nav" id="tabs">
+      <ul></ul>
+    </div>
+
+  </div>
+
+  <footer>Lisa Gieng &copy; 2019
+    <p>
+    </p>
+
+  </footer>
+
+  <!-- JQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- JQuery validation -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+  <!-- JQuery UI -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <!-- my own JS/JQuery for... everything else -->
+  <script src="js/jqueryvalidation.js"></script>
+  <script src="js/maketable.js"></script>
+  <script src="js/jquerysliders.js"></script>
+  <script src="js/jquerytabs.js"></script>
+</body>
+</html>
