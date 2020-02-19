@@ -1,0 +1,16 @@
+.tiles {
+  height: 50px;
+  width: 50px;
+}
+
+.test {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  margin: 10px;
+  background-color: pink;
+}
+
+.droppable {
+  border: 2px solid black;
+}
