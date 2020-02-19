@@ -1,16 +1,68 @@
-.tiles {
-  height: 50px;
-  width: 50px;
+/* Lisa Gieng
+Dec 20, 2019
+GUI I: HW9 - Scrabble
+
+This is the css file for hw9. It styles everything, there's nothing
+particularly special about it.
+For the tile rack, I made it the background of the div that the
+tiles will load into to simulate them being on the rack.
+
+hw9.js
+Copyright (c) 2019 Lisa Gieng. All rights reserved. */
+
+html, body {
+  background-image: linear-gradient(#ffe8f2, #e8e0ff);
+  background-repeat: no-repeat;
+  background-color: #e8e0ff;
 }
 
-.test {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
-  margin: 10px;
-  background-color: pink;
+div {
+  padding: 8px;
+  margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.75em;
+  padding: 5px;
+}
+
+.tiles {
+  height: 70px;
+  width: 70px;
 }
 
 .droppable {
-  border: 2px solid black;
+  border: 3px solid white;
+  height: 72px;
+  width: 72px;
+}
+
+.removeSpace {
+  font-size: 0;
+}
+
+.rackThings {
+  background-image: url("../img/tilerack.png");
+  background-repeat: no-repeat;
+  background-size: 640px 120px;
+  height: 120px;
+  width: 640px;
+  padding-top: 20px;
+}
+
+.bigText {
+  font-size: 1.5em;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 800px;
+  margin-top: 30px;
+  border-radius: 20px;
 }

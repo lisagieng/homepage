@@ -1,24 +1,38 @@
+/* Lisa Gieng
+Dec 20, 2019
+GUI I: HW9 - Scrabble
 
-// testing ajax
-// https://www.codeproject.com/Tips/1263247/How-to-Open-a-JSON-File-in-JavaScript-for-Web
+This file utilizies the JQuery UI draggable and droppable and a
+little bit of AJAX. It has the function getHand which randomly
+generates 7 tiles from pieces.json with AJAX.
 
-var hand = []; // array for the hand
-var values = []; // array for values
+load-json.js
+Copyright (c) 2019 Lisa Gieng. All rights reserved. */
 
 function getHand() {
   // declaring variable for tile rack images
   var myRack = "";
-  // make sure array is empty, if not make it empty
-  if(hand.length != 0){
-      hand.length = 0;
-      values.length = 0;
+
+  // reset score counters and word
+  baseScore = 0;
+  score = 0;
+  $("div#score").html("Points: " + score);
+  $("div#total").html("Total Points: " + totalPoints);
+  for (var x = 0; x < 7; x++){
+    if (word[x] != "") {
+        word[x] = "";
+    }
   }
+
+  /* removing the commas from array display in js
+  https://www.quora.com/How-do-I-remove-commas-while-displaying-an-array-in-JavaScript */
+  $("div#word").html("Word: " + word.join(""));
 
   var xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    //if(xhttp.status === 200) {
+    if(xhttp.status === 200) {
     responseObject = JSON.parse(xhttp.responseText);
-    //}
+    }
 
     // getting 7 tiles randomly from the json structure
     for(var i = 0; i < 7; i++) {
@@ -33,27 +47,27 @@ function getHand() {
         random = responseObject.pieces[j].letter
       }
       responseObject.pieces[j].amount--;
-      hand.push(random);
       temp = responseObject.pieces[j].value;
-      values.push(temp);
       myRack += " <img src='scrabbletiles/Scrabble_Tile_" + random + ".jpg' class='tiles' id='" + temp + "' name='" + random + "'>";
     }
-
-    // display the hand
-    document.getElementById("letter").innerHTML = hand;
-    document.getElementById("letterRack").innerHTML = myRack;
-    document.getElementById("value").innerHTML = values;
+    // put tile images to rack
+    $("#letterRack").html(myRack);
 
     // make the tiles draggable
-    $(".tiles").draggable();
+    $(".tiles").draggable({snap: ".droppable", snapMode: "inner", snapTolerance: 15});
+
+    // make droppable targets
+    makeDroppable();
+
   }
-  // load the pieces.json file
-  xhttp.open("GET", "resources/pieces.json", true);
+  /* load the pieces.json file
+    used pieces.json file given in hw9 pdf from ramon meza */
+  xhttp.open("GET", "js/pieces.json", true);
   xhttp.send('');
 }
 
 /* referenced using math.random to get random items from JSON
   https://stackoverflow.com/questions/19589598/how-to-get-random-values-in-json  */
 function get_rand_tile() {
-  return Math.floor(Math.random()*26);
+  return Math.floor(Math.random()*27);
 }

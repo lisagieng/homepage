@@ -1,34 +1,65 @@
+<!-- Lisa Gieng
+Dec 20, 2019
+GUI I: HW9 - Scrabble
+
+This file is the html portion of the assignment. It just has all of the
+placeholders for everything. Almost everything is loaded with JavaScript
+except for the Scrabble board tiles, which are just images.
+It also has the buttons.
+
+hw9.html
+Copyright (c) 2019 Lisa Gieng. All rights reserved. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta-charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="css/hw9.css">
+  <!-- jQuery UI -->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!-- Boostrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Lisa Gieng - HW9 </title>
 </head>
 <body>
-  <div id="letter"></div>
-  <div><button type="button" id="hand" onclick="getHand()">Generate New Hand</button></div>
-  <div id="letterRack"><</div>
-  <div id="value"></div>
-  <div id="test"></div>
+  <div class="wrapper">
+    <div class="row">
+      <div class="container text-center removeSpace">
+        <h1>A Bit o' Scrabble</h1>
+        <!-- placing my board tiles! -->
+        <img class="droppable" id="0" src="img/reg_tile.jpg">
+        <img class="droppable" id="1" src="img/double_tile.jpg">
+        <img class="droppable" id="2" src="img/reg_tile.jpg">
+        <img class="droppable" id="3" src="img/reg_tile.jpg">
+        <img class="droppable" id="4" src="img/reg_tile.jpg">
+        <img class="droppable" id="5" src="img/double_tile.jpg">
+        <img class="droppable" id="6" src="img/reg_tile.jpg">
+      </div>
+      <div class="container">
+        <!-- tile rack placement -->
+        <div class="rackThings text-center" id="letterRack"></div>
+      </div>
+    </div>
+    <div class="row text-center">
+    <!-- tracker placements -->
+      <div class="col-4 bigText" id="word"></div>
+      <div class="col-4 bigText" id="score"></div>
+      <div class="col-4 bigText" id="total"></div>
+      <div class="container">
+        <button class="btn btn-secondary" type="button" id="next" onclick="nextWord()">Next Word</button>
+        <button class="btn btn-secondary" type="button" id="hand" onclick="getHand()">New Tiles</button>
+      </div>
+    </div>
+    <footer>&copy; 2019  Lisa Gieng </footer>
+  </div>
 
-  <!--<img alt="Tile Rack" src="resources/tilerack.png"> -->
-<!--  <img name="a" id="draggable" class="tiles" alt="test" src="scrabbletiles/Scrabble_Tile_A.jpg">
-  <img name="b" id="draggable" class="tiles" alt="test" src="scrabbletiles/Scrabble_Tile_B.jpg"> -->
-
-  <img class="droppable" id="1" src="imgs/reg_tile.jpg"> <img class="droppable" id="2" src="imgs/double_tile.jpg"> <img class="droppable" id="3" src="imgs/reg_tile.jpg"> <img class="droppable" id="4" src="imgs/reg_tile.jpg">
-  <img class="droppable" id="5" src="imgs/reg_tile.jpg"> <img class="droppable" id="6" src="imgs/double_tile.jpg"> <img class="droppable" id="7" src="imgs/reg_tile.jpg">
-
-  <div id="word"></div>
-  <div id="score"></div>
-
+  <!-- jQuery -->
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+  <!-- jQuery UI -->
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/hw9.js"></script>
   <script src="js/load-json.js"></script>
