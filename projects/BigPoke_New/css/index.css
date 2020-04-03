@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+@font-face {font-family:ThirstyScript; src: url(../text/ThirstyScriptRegular_0.otf);}
+
+.container {
+  background-color: white;
+  text-align: center;
+  height: 75vh;
+  position: relative;
+}
+
+/* logo tingz */
+.logoBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo {
+    width: 80%;
+}
+
+/* navbar */
+.navbar {
+  background-color: #f2f2f2;
+}
+
+/* thirstyscript font */
+.thirstyscript {
+  font-family: ThirstyScript;
+  color: rgb(37, 170, 225);
+}
+
+/* boxes */
+.box {
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  padding: 10px;
+  display:none;
+}
+
+/* button */
+.btn {
+  border: 0 !important;
+}
