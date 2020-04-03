@@ -10,6 +10,6 @@
 
 $(document).ready(function(){
   $("#about").click(function(){
-    $("#bigpoke").load("test.txt");
+    $("#bigpoke").load("about.html");
   });
 });
