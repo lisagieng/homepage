@@ -4,21 +4,24 @@
 .container {
   background-color: white;
   text-align: center;
-  height: 75vh;
+  height: 70vh;
   position: relative;
+  z-index:-1;
 }
 
 /* logo tingz */
 .logoBox {
-  margin: 0;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  right: 10%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .logo {
-    width: 80%;
+  width: 80%;
+  z-index: 0;
 }
 
 /* navbar */
@@ -33,11 +36,12 @@
 }
 
 /* boxes */
-.box {
+.boxAbout {
   width: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: rgba(217, 245, 255, 0.9);
   padding: 10px;
-  display:none;
+  display: none;
+  z-index: 5;
 }
 
 /* button */
