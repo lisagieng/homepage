@@ -4,7 +4,7 @@
 .container {
   background-color: white;
   text-align: center;
-  height: 80vh;
+  height: 40vh;
   position: relative;
   z-index:-1;
 }
