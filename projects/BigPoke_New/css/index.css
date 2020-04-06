@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
 @font-face {font-family:ThirstyScript; src: url(../text/ThirstyScriptRegular_0.otf);}
 
+.wrapper {
+  overflow-y: hidden;
+}
+
 .container {
   background-color: white;
   text-align: center;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   z-index:-1;
-}
-
-.containerMobile {
-  background-color: white;
-  text-align: center;
-  height: 20vh;
-  position: relative;
-  z-index: -1;
 }
 
 /* logo tingz */
@@ -96,11 +92,90 @@ footer {
   bottom: 0;
 }
 
+/* gps */
+iframe {
+  frameborder: 0;
+  scrolling: no;
+}
+
+.gpsnavLg {
+  width: 500px;
+  height: 400px;
+}
+
+.gpsnavSm {
+  width: 80%;
+  height: 280px;
+}
+
+.mapouterLg {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 500px;
+  }
+
+.gmap_canvasLg {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 500px;}
+
+.mapouterSm {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  }
+
+.gmap_canvasSm {
+  overflow: hidden;
+}
+
 /* mobile and desktop tingz */
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 
 @media screen and (max-width: 768px){
 #content-desktop {display: none;}
-#content-mobile {display: block;
+#content-mobile {display: block;}
+.wrapper {
+  overflow-y: auto;
+}
+
+.container{
+  background-color: white;
+  text-align: center;
+  height: 20vh;
+  position: relative;
+  z-index: -1;
+}
+
+.gpsnavLg {
+  width: 500px;
+  height: 300px;
+}
+
+.gpsnavSm {
+  width: 80%;
+  height: 280px;
+}
+
+.mapouterLg {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 400px;
+  }
+
+.gmap_canvasLg {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 400px;}
+
+.mapouterSm {
+  position: relative;
+  text-align: center;
+  height: 300px;
+  }
 }
