@@ -44,6 +44,22 @@
   z-index: 5;
 }
 
+.boxMenu {
+  width: 100%;
+  background-color: rgba(217, 245, 255, 0.9);
+  padding: 10px;
+  display: none;
+  z-index: 5;
+}
+
+.boxContact {
+  width: 100%;
+  background-color: rgba(217, 245, 255, 0.9);
+  padding: 10px;
+  display: none;
+  z-index: 5;
+}
+
 /* button */
 .btn {
   border: 0 !important;
