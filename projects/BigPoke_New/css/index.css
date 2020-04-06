@@ -67,7 +67,6 @@
 
 .boxContact {
   width: 100%;
-  height: 80vh;
   background-color: rgba(242, 242, 242, 1);
   padding: 10px;
   display: none;
@@ -139,39 +138,25 @@ iframe {
 @media screen and (max-width: 768px){
 #content-desktop {display: none;}
 #content-mobile {display: block;}
-.container{
-  background-color: white;
-  text-align: center;
-  position: relative;
-  z-index: -1;
+.boxMenu, .boxContact {
+  height: 80vh;
 }
 
 .gpsnavLg {
-  width: 500px;
+  width: 400px;
   height: 300px;
 }
 
-.gpsnavSm {
-  width: 80%;
-  height: 280px;
-}
-
 .mapouterLg {
-  position: relative;
-  text-align: right;
   height: 300px;
   width: 400px;
   }
 
 .gmap_canvasLg {
-  overflow: hidden;
-  background: none !important;
   height: 300px;
   width: 400px;}
 
 .mapouterSm {
-  position: relative;
-  text-align: center;
   height: 300px;
   }
 }
