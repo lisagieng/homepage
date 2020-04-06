@@ -97,7 +97,7 @@
 
 /* boxes */
 .boxAbout {
-  width: 100%;
+  width: 70%;
   background-color: rgba(230, 231, 255, 1);
   padding: 10px;
   display: none;
@@ -105,17 +105,17 @@
 }
 
 .boxMenu {
-  width: 100%;
+  width: 70%;
   background-color: rgba(217, 245, 255, 1);
   padding: 10px;
   display: none;
   z-index: 5;
   overflow:auto;
-  height: 85vh;
+  height: 80vh;
 }
 
 .boxContact {
-  width: 100%;
+  width: 70%;
   background-color: rgba(242, 242, 242, 1);
   padding: 10px;
   display: none;

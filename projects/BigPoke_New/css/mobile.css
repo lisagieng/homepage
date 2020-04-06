@@ -10,8 +10,8 @@ iframe {
 }
 
 .gpsnavLg {
-  width: 500px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
 }
 
 .gpsnavSm {
@@ -22,20 +22,20 @@ iframe {
 .mapouterLg {
   position: relative;
   text-align: right;
-  height: 450px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   }
 
 .gmap_canvasLg {
   overflow: hidden;
   background: none !important;
-  height: 450px;
-  width: 500px;}
+  height: 400px;
+  width: 400px;}
 
 .mapouterSm {
   position: relative;
   text-align: center;
-  height: 450px;
+  height: 400px;
   }
 
 .gmap_canvasSm {
@@ -49,7 +49,12 @@ iframe {
 @media screen and (max-width: 768px){
 #content-desktop {display: none;}
 #content-mobile {display: block;}
-.boxMenu, .boxContact {
+.boxMenu, .boxAbout {
+  width: 100%;
+}
+
+.boxContact {
+  width: 100%;
   height: 80vh;
 }
 
