@@ -143,18 +143,18 @@ iframe {
 }
 
 .gpsnavLg {
-  width: 400px;
+  width: auto;
   height: 300px;
 }
 
 .mapouterLg {
   height: 300px;
-  width: 400px;
+  width: auto;
   }
 
 .gmap_canvasLg {
   height: 300px;
-  width: 400px;}
+  width: auto;}
 
 .mapouterSm {
   height: 300px;
