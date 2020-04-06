@@ -9,12 +9,12 @@
   z-index:-1;
 }
 
-#content-desktop {display: block;}
-#content-mobile {display: none;}
-
-@media screen and (max-width: 768px){
-#content-desktop {display: none;}
-#content-mobile {display: block;}
+.containerMobile {
+  background-color: white;
+  text-align: center;
+  height: 20vh;
+  position: relative;
+  z-index: -1;
 }
 
 /* logo tingz */
@@ -59,7 +59,7 @@
 /* boxes */
 .boxAbout {
   width: 100%;
-  background-color: rgba(230, 231, 255, 0.9);
+  background-color: rgba(230, 231, 255, 1);
   padding: 10px;
   display: none;
   z-index: 5;
@@ -67,7 +67,7 @@
 
 .boxMenu {
   width: 100%;
-  background-color: rgba(217, 245, 255, 0.9);
+  background-color: rgba(217, 245, 255, 1);
   padding: 10px;
   display: none;
   z-index: 5;
@@ -75,7 +75,7 @@
 
 .boxContact {
   width: 100%;
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: rgba(242, 242, 242, 1);
   padding: 10px;
   display: none;
   z-index: 5;
@@ -94,4 +94,13 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
+}
+
+/* mobile and desktop tingz */
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px){
+#content-desktop {display: none;}
+#content-mobile {display: block;
 }

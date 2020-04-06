@@ -1,32 +1,32 @@
 $(document).ready(function(){
   //about
   $("#about").click(function() {
-    $(".boxAbout").toggle("slow");
-    $(".boxContact").hide("slow");
-    $(".boxMenu").hide("slow");
+    $(".boxAbout").fadeToggle("slow");
+    $(".boxContact").hide();
+    $(".boxMenu").hide();
   });
   $("#aboutclose").click(function() {
-    $("#aboutDiv .boxAbout").hide("slow");
+    $("#aboutDiv .boxAbout").fadeToggle("slow");
   });
 
   //menuDiv
   $("#menu").click(function() {
-    $(".boxMenu").toggle("slow");
-    $(".boxAbout").hide("slow");
-    $(".boxContact").hide("slow");
+    $(".boxMenu").fadeToggle("slow");
+    $(".boxAbout").hide();
+    $(".boxContact").hide();
   });
   $("#menuClose").click(function() {
-    $("#menuDiv .boxMenu").hide("slow");
+    $("#menuDiv .boxMenu").fadeToggle("slow");
   });
 
   //contact us
   $("#contact").click(function() {
-    $(".boxContact").toggle("slow");
-    $(".boxAbout").hide("slow");
-    $(".boxMenu").hide("slow");
+    $(".boxContact").fadeToggle("slow");
+    $(".boxAbout").hide();
+    $(".boxMenu").hide();
   });
   $("#contactClose").click(function() {
-    $("#contactDiv .boxContact").hide("slow");
+    $("#contactDiv .boxContact").fadeToggle("slow");
   });
 
 });
