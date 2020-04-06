@@ -8,6 +8,54 @@
   z-index:-1;
 }
 
+/* menu formatting */
+.inline {
+  display: inline;
+}
+
+.none {
+  padding: 0;
+  margin: 0;
+}
+
+.step {
+  font-weight: bold;
+  color: grey;
+  font-size: 1.1em;
+}
+
+.important {
+  font-weight: bold;
+  color: #ff5c5c;
+}
+
+.bolded {
+  font-weight: bold;
+  color: #14327a;
+}
+
+.desc {
+  color: #14327a;
+}
+
+.mini {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #00ad7c;
+}
+
+.izzy {
+  color: #ff8482;
+}
+
+.menu {
+  color: grey !important;
+}
+
+.menu:hover {
+  color: #00ad7c !important;
+}
+
 /* logo tingz */
 .logoBox {
   position: fixed;
@@ -90,73 +138,4 @@ footer {
   bottom: 0;
   padding: 5px;
   z-index: -1;
-}
-
-/* gps */
-iframe {
-  frameborder: 0;
-  scrolling: no;
-}
-
-.gpsnavLg {
-  width: 500px;
-  height: 450px;
-}
-
-.gpsnavSm {
-  width: 80%;
-  height: 280px;
-}
-
-.mapouterLg {
-  position: relative;
-  text-align: right;
-  height: 450px;
-  width: 500px;
-  }
-
-.gmap_canvasLg {
-  overflow: hidden;
-  background: none !important;
-  height: 450px;
-  width: 500px;}
-
-.mapouterSm {
-  position: relative;
-  text-align: center;
-  height: 450px;
-  }
-
-.gmap_canvasSm {
-  overflow: hidden;
-}
-
-/* mobile and desktop tingz */
-#content-desktop {display: block;}
-#content-mobile {display: none;}
-
-@media screen and (max-width: 768px){
-#content-desktop {display: none;}
-#content-mobile {display: block;}
-.boxMenu, .boxContact {
-  height: 80vh;
-}
-
-.gpsnavLg {
-  width: 500px;
-  height: 250px;
-}
-
-.mapouterLg {
-  height: 250px;
-  width: auto;
-  }
-
-.gmap_canvasLg {
-  height: 250px;
-  width: auto;}
-
-.mapouterSm {
-  height: 250px;
-  }
 }
