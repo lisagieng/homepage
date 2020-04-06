@@ -4,7 +4,7 @@
 .container {
   background-color: white;
   text-align: center;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   z-index:-1;
 }
@@ -71,4 +71,14 @@
 /* button */
 .btn {
   border: 0 !important;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  font-size: 0.7em;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
 }
