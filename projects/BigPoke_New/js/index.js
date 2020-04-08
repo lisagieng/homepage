@@ -4,19 +4,32 @@ $(document).ready(function(){
     $(".boxAbout").fadeToggle("slow");
     $(".boxContact").hide();
     $(".boxMenu").hide();
+    $(".boxOrder").hide();
   });
   $("#aboutclose").click(function() {
     $("#aboutDiv .boxAbout").fadeToggle("slow");
   });
 
-  //menuDiv
+  //menu
   $("#menu").click(function() {
     $(".boxMenu").fadeToggle("slow");
     $(".boxAbout").hide();
     $(".boxContact").hide();
+    $(".boxOrder").hide();
   });
   $("#menuClose").click(function() {
     $("#menuDiv .boxMenu").fadeToggle("slow");
+  });
+
+  //order
+  $("#order").click(function() {
+    $(".boxOrder").fadeToggle("slow");
+    $(".boxAbout").hide();
+    $(".boxContact").hide();
+    $(".boxMenu").hide();
+  });
+  $("#orderclose").click(function() {
+    $("#orderDiv .boxorder").fadeToggle("slow");
   });
 
   //contact us
@@ -24,6 +37,7 @@ $(document).ready(function(){
     $(".boxContact").fadeToggle("slow");
     $(".boxAbout").hide();
     $(".boxMenu").hide();
+    $(".boxOrder").hide();
   });
   $("#contactClose").click(function() {
     $("#contactDiv .boxContact").fadeToggle("slow");

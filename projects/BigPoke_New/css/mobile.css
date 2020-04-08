@@ -5,7 +5,7 @@
 @media screen and (max-width: 768px){
 #content-desktop {display: none;}
 #content-mobile {display: block;}
-.boxMenu, .boxAbout {
+.boxMenu, .boxAbout, .boxOrder {
   width: 100%;
 }
 

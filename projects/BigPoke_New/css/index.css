@@ -76,9 +76,25 @@
   overflow-x: hidden;
 }
 
+.boxOrder {
+  width: 70%;
+  background-color: #ebfff6;
+  padding: 10px;
+  display: none;
+  z-index: 5;
+}
+
 /* button */
 .btn {
   border: 0 !important;
+}
+
+.grubby {
+  width: 90px;
+}
+
+.phone {
+  width: 100px;
 }
 
 /* footer */
