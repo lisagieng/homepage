@@ -89,6 +89,12 @@
   border: 0 !important;
 }
 
+.order {
+  height: 85px;
+  width: 85px;
+  border-radius: 20% !important;
+}
+
 .grubby {
   width: 95px;
 }
