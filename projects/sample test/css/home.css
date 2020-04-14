@@ -1,0 +1,69 @@
+.logo {
+  width: 70%;
+}
+
+.bg-alt {
+  background-color: rgba(195,217,163,0.3);
+}
+
+.title h3 {
+  display:inline;
+}
+
+/* select boxes */
+.spaceplz {
+  margin: 5px;
+}
+
+/* for images under mission statement */
+.smol {
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* for news box */
+.news {
+  width: auto;
+  height: 300px;
+  overflow: auto;
+}
+
+/* NAVBAR TINGZ */
+.nav {
+  background-color: #70965f;
+}
+
+/* Adding border */
+.nav-item {
+  border: 1px solid white;
+  border-left: 0px;
+}
+
+.nav-item:last-child {
+  border-right: 0px;
+}
+
+/* Text to white */
+.nav > li > a {
+  color: white;
+}
+
+.dropdown:hover, .my-button:hover {
+  background-color: #84b570;
+}
+
+/* Overriding some Bootstrap defaults for better aesthetics */
+.dropdown > .dropdown-menu {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  //border: 0.5px solid grey;
+}
+
+.hideme {
+  display: none;
+}
+
+.myselect {
+  border: 1px solid red !important;
+}

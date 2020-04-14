@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Recycling & You</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body class="wrapper">
+
+<!-- mission statement -->
+<div class="container-fluid pt-3">
+    <div class="row">
+      <div class="container-fluid text-center">
+        <h3>Our Mission</h3>
+        <p>Welcome to Recycling & You, a Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt.<br>
+          Our goal is to help in the following areas:</p>
+        </div></div>
+      <div class="row text-center">
+        <div class="col">
+          <a href="https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html">
+          <img alt="Sustainability" class="smol" src="img/sus.jpeg">
+          <p>Sustainability</p></a>
+        </div>
+        <div class="col">
+          <a href="https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html">
+          <img alt="Recycling" class="smol" src="img/rec.jpg">
+          <p>Recycling</p></a>
+        </div>
+        <div class="col">
+          <a href="https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html">
+          <img alt="Locating" class="smol" src="img/map.jpeg">
+          <p>Locating</p></a>
+        </div>
+        <div class="col">
+          <a href="https://lisagieng.github.io/ray/Subsections/KidsPlace/Overview/Overview.html">
+          <img alt="Education" class="smol" src="img/sun.jpg">
+          <p>Educating</p></a>
+        </div>
+  </div></div>
+
+<!-- Quick Links lead -->
+<div class="container-fluid pt-2 pb-3 bg-alt">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Not sure where to start?</h3>
+      <form class=" justify-content-center form-inline" id="myForm">
+        <h4>I'm looking for </h4>
+        <select name="sel1" id="sel1" class="spaceplz form-control">
+          <option value="0"> </option>
+          <option value="how">how</option>
+          <option value="where">where</option>
+        </select>
+        <h4> to </h4>
+        <select name="sel2" id="sel2" class="spaceplz form-control">
+          <option value="0"> </option>
+          <option value="planet">help the planet</option>
+          <option value="sustainable">be sustainable</option>
+          <option value="recycle">recycle</option>
+          <option value="educate">educate others</option>
+        </select>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center" id="results"></div>
+</div></div>
+
+<!-- more content -->
+<div class="pt-3 mt-1">
+  <div class="row container-fluid mx-auto">
+    <div class="col-md-5 col-12 pb-2">
+      <img class="container" src="img/home-pixabay.jpg" alt="Recycling">
+      <!--https://pixabay.com/photos/recycle-reuse-recycling-recyclable-57136/-->
+    </div>
+    <div class="col-md-6 col-12">
+      <h3>Is that recyclable?</h3>
+      <p>Only 10% of what you recycle actually gets recycled into other products.
+        This is caused by contamination, which occurs when non-recyclable or dirty
+        products are put into recycling.</p>
+      <p>Learn more about whether you’re properly recycling <a href="https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html">here</a>.<p>
+      <p>Have a product that you’re unsure of whether it is recyclable or not? Search for it <a href="https://lisagieng.github.io/ray/Subsections/Recycling/IsThisRecyclable/IsThisRecyclable.html">here</a> or in the search bar below.</p>
+      <form id="searchme" class="form-inline">
+        <input class="form-control spaceplz" type="text" placeholder="Search for item..."></input>
+        <button id="mybutton" class="btn btn-success" onclick="sorrysearch()">Search</button></form>
+    </div></div></div>
+
+<!-- newsfeed -->
+<div class="container-fluid title news bg-alt pt-2 mt-3">
+  <h3>News</h3> <small class="text-muted">Source: <a href="https://www.sciencedaily.com/">ScienceDaily</a>.</small><hr>
+    <p id ="feed"></p><p id="feedControl">Loading...</p></div>
+
+<!-- JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<!-- JQuery validation -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- feed rss -->
+<script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+<!-- JS things -->
+<script src="js/home.js"></script>
+<script src="js/searchresults.js"></script>
+</body>

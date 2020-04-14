@@ -28,8 +28,8 @@ $(document).ready(function(){
     $(".boxContact").hide();
     $(".boxMenu").hide();
   });
-  $("#orderclose").click(function() {
-    $("#orderDiv .boxorder").fadeToggle("slow");
+  $("#orderClose").click(function() {
+    $("#orderDiv .boxOrder").fadeToggle("slow");
   });
 
   //contact us
