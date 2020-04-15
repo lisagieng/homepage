@@ -97,6 +97,6 @@ $(document).ready(function(){
     $("#div1").load("home.html");
 
     $("#additionalResources").click(function() {
-      $("#div1")load("subsections/additional.html");
+      $("#div1").load("subsections/additional.html");
   });
 });
